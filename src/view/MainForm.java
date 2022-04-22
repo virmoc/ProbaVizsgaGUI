@@ -29,6 +29,13 @@ public class MainForm extends javax.swing.JFrame {
         jRadioButton2 = new javax.swing.JRadioButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
+        jMenuBar2 = new javax.swing.JMenuBar();
+        jMenu3 = new javax.swing.JMenu();
+        jMenuItem2 = new javax.swing.JMenuItem();
+        jMenuItem3 = new javax.swing.JMenuItem();
+        jMenu4 = new javax.swing.JMenu();
+        jMenuItem4 = new javax.swing.JMenuItem();
+        jMenuItem5 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("BlackJack");
@@ -145,6 +152,33 @@ public class MainForm extends javax.swing.JFrame {
                 .addContainerGap())
         );
 
+        jMenu3.setText("File");
+
+        jMenuItem2.setText("Mentés");
+        jMenu3.add(jMenuItem2);
+
+        jMenuItem3.setText("Kilépés");
+        jMenu3.add(jMenuItem3);
+
+        jMenuBar2.add(jMenu3);
+
+        jMenu4.setText("Strategia");
+
+        jMenuItem4.setText("Kockáztat");
+        jMenu4.add(jMenuItem4);
+
+        jMenuItem5.setText("Nem kockáztat");
+        jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem5ActionPerformed(evt);
+            }
+        });
+        jMenu4.add(jMenuItem5);
+
+        jMenuBar2.add(jMenu4);
+
+        setJMenuBar(jMenuBar2);
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -174,6 +208,10 @@ public class MainForm extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
@@ -216,6 +254,13 @@ public class MainForm extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JMenu jMenu3;
+    private javax.swing.JMenu jMenu4;
+    private javax.swing.JMenuBar jMenuBar2;
+    private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem3;
+    private javax.swing.JMenuItem jMenuItem4;
+    private javax.swing.JMenuItem jMenuItem5;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
